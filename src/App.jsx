@@ -34,7 +34,7 @@ setShowData(true);
         <div><button onClick={handleSearch} style={{backgroundColor:'lightgreen', border:'none', borderRadius:'10px', height:'30px'}}>Search</button></div>
       </div>
 
-{loading?(<p>Loading data…</p>):""}
+{loading?(<p>Loading data...</p>):""}
       {showData?(<div style={{display:'flex', marginTop:'30px'}} className='weather-cards'>
         <div className="weather-card">
           <div>Temperature</div>
