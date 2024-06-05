@@ -34,21 +34,21 @@ setShowData(true);
         <div><button onClick={handleSearch} style={{backgroundColor:'lightgreen', border:'none', borderRadius:'10px', height:'30px'}}>Search</button></div>
       </div>
 
-{loading?"Loading data…":""}
-      {showData?(<div style={{display:'flex', marginTop:'30px'}}>
-        <div className="card">
+{loading?(<p>Loading data…</p>):""}
+      {showData?(<div style={{display:'flex', marginTop:'30px'}} className='weather-cards'>
+        <div className="weather-card">
           <div>Temperature</div>
           <div>{data.current.temp_c} °C</div>
         </div>
-        <div className="card">
+        <div className="weather-card">
           <div>Humidity</div>
           <div>{data.current.humidity}%</div>
         </div>
-        <div className="card">
+        <div className="weather-card">
           <div>Condition</div>
           <div>{data.current.condition.text}</div>
         </div>
-        <div className="card">
+        <div className="weather-card">
           <div>Wind Speed</div>
           <div>{data.current.wind_kph} kph</div>
         </div>
